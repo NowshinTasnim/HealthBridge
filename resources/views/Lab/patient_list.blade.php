@@ -1,6 +1,7 @@
 @extends('layouts.lab')
 
 @section('content')
+@php $page = 'Patient_list'; @endphp
 <div class="container_start">
     <div class = "container">
         <!-- Total number -->
@@ -50,6 +51,7 @@
 </div>
 
 <script>
+    // Test status Mark as done
     function updateStatus(appointmentId) {
         // Reference the clicked checkbox
         const checkbox = document.querySelector(`.status-checkbox[value="${appointmentId}"]`);
@@ -85,59 +87,51 @@
             checkbox.checked = false;
         }
     }
-</script>
 
+//     // search bar for the patient_list page
+//     function searchPatient() {
+//         const searchQuery = document.getElementById('searchInput').value;
 
-{{-- <script>
-    function updateStatus(appointmentID) {
-        // Log the appointment ID to check its value
-        // console.log('Appointment ID:', appointmentID);
+//         // Send an AJAX request to fetch filtered patient data
+//         $.ajax({
+//             url: "{{ route('Lab.patient_list.search') }}", // Define this route in web.php
+//             type: "GET",
+//             data: {
+//                 query: searchQuery, // Pass the search query to the server
+//                 page: "Patient_list",
+//             },
+//             success: function (response) {
+//                 // Update the patient table with the new data
+//                 let tableBody = '';
+//                 response.forEach(patient => {
+//                     tableBody += `
+//                         <tr style="color: #3b0764; text-align:center;">
+//                             <td>${patient.Patient_Name}</td>
+//                             <td>${patient.Phone_Number}</td>
+//                             <td>
+//                                 ${patient.Test_Status === 'Done' ? `
+//                                     <span class="text-green-500 font-bold">
+//                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+//                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+//                                         </svg>
+//                                         Done
+//                                     </span>` : `
+//                                     <input type="checkbox" class="status-checkbox" value="${patient.Appointment_ID}" onclick="updateStatus('${patient.Appointment_ID}')">
+//                                 `}
+//                             </td>
+//                             <td>${patient.Test_Name}</td>
+//                             <td>${patient.Appointment_Date}</td>
+//                         </tr>
+//                     `;
+//                 });
+//                 document.querySelector('tbody').innerHTML = tableBody;
+//             },
+//             error: function (error) {
+//                 console.error('Error fetching patient data:', error);
+//             }
+//         });
+//     }
 
-        // Confirm the action with the user
-        if (confirm('Are you sure you want to mark this as "Done"?')) {
-            // Make the fetch API call
-            fetch('/lab/patient_list', {
-                method: 'POST',
-                headers: {
-                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    appointmentID: appointmentID,
-                    status: 'Done',
-                }),
-
-            })
-            .then(response => {
-
-                // console.log('Response status:', response.status);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok. Status: ${response.status}');
-                }
-                return response.json();
-            })
-            .then(data => {
-                // console.log('Server Response:', data); // Log the server response for debugging
-                if (data.success) {
-                    alert('Status updated successfully.');
-                    location.reload(); // Reload to reflect changes
-                } else {
-                    alert('Error: ${data.message || 'Something went wrong!'}');
-                    this.checked = false; // Revert the checkbox
-                }
-            });
-            .catch(error => {
-                alert('An error occurred:' + error.message);
-                console.error('Fetch Error:', error);
-                this.checked = false; // Revert the checkbox
-            });
-        } else {
-            console.log('Action cancelled by the user.');
-            this.checked = false; // Revert the checkbox if user cancels
-        }
-    }
-
-
-</script> --}}
+// </script>
 
 @endsection

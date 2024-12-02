@@ -192,4 +192,71 @@ class LabController extends Controller
 
         return back()->with('success', 'Bill uploaded successfully!');
     }
+    public function searchPatients(Request $request)
+    {
+        $query = $request->input('query');
+        $page = $request->input('page');
+        $id = 1;
+        // Fetch patients whose names match the search query
+        if($page == "Patient_list")
+        {
+            $patients = DB::table('Appointments')
+                ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
+                ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
+                ->select(
+                    'Patient.Pt_Name as Patient_Name',
+                    'Patient.Phone_no as Phone_Number',
+                    'Appointments.Test_Status as Test_Status',
+                    'Lab_Test.Test_name as Test_Name',
+                    'Appointments.App_Date as Appointment_Date',
+                    'Appointments.AppointmentID as Appointment_ID'
+                )
+                ->where('Patient.Pt_Name', 'like', '%' . $query . '%')
+                ->where('LabID', $id)
+                ->get();
+        }
+        else if($page == "Upload_reports")
+        {
+            $patients = DB::table('Appointments')
+                ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
+                ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
+                ->select(
+                    'Patient.Pt_Name as Patient_Name',
+                    'Patient.Phone_no as Phone_Number',
+                    'Lab_Test.Test_name as Test_Name',
+                    'Appointments.App_Date as Appointment_Date',
+                    'Appointments.AppointmentID as Appointment_ID',
+                    'Appointments.LabID as Lab_ID',
+                    'Patient.PatientID as Patient_ID'
+                )
+                ->where('LabID', $id)
+                ->where('Patient.Pt_Name', 'like', '%' . $query . '%')
+                ->where('Appointments.Test_Status', 'Done')
+                ->where('Appointments.Report_Status', 'Not Uploaded')
+                ->get();
+        }
+        else if ($page == "Upload_bills")
+        {
+            $patients = DB::table('Appointments')
+                ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
+                ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
+                ->select(
+                    'Patient.Pt_Name as Patient_Name',
+                    'Patient.Phone_no as Phone_Number',
+                    'Lab_Test.Test_name as Test_Name',
+                    'Appointments.App_Date as Appointment_Date',
+                    'Appointments.AppointmentID as Appointment_ID',
+                    'Appointments.LabID as Lab_ID',
+                    'Patient.PatientID as Patient_ID'
+                )
+                ->where('LabID', $id)
+                ->where('Patient.Pt_Name', 'like', '%' . $query . '%')
+                ->where('Appointments.Test_Status', 'Done')
+                ->where('Appointments.Bill_Status', 'Not Uploaded')
+                ->get();
+        }
+
+        return response()->json($patients);
+    }
+
 }
