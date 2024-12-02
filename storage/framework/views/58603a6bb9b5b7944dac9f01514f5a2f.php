@@ -1,4 +1,5 @@
 <?php $__env->startSection('content'); ?>
+<?php $page = 'Upload_bills'; ?>
 <div class="container_start">
     <div class = "container">
         <!-- Total number -->
@@ -114,6 +115,49 @@
                 } else {
                     fileNameDisplay.textContent = '';
                 }
+            }
+
+            function searchPatient() {
+                const searchQuery = document.getElementById('searchInput').value;
+
+                // Send an AJAX request to fetch filtered patient data
+                $.ajax({
+                    url: "<?php echo e(route('Lab.patient_list.search')); ?>", // Define this route in web.php
+                    type: "GET",
+                    data: {
+                        query: searchQuery, // Pass the search query to the server
+                        page: "Upload_bills"
+                    },
+                    success: function (response) {
+                        // Update the patient table with the new data
+                        let tableBody = '';
+                        response.forEach(patient => {
+                            tableBody += `
+                                <tr style="color: #3b0764; text-align:center;">
+                                    <td>${patient.Patient_Name}</td>
+                                    <td>${patient.Phone_Number}</td>
+                                    <td>
+                                        ${patient.Test_Status === 'Done' ? `
+                                            <span class="text-green-500 font-bold">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                Done
+                                            </span>` : `
+                                            <input type="checkbox" class="status-checkbox" value="${patient.Appointment_ID}" onclick="updateStatus('${patient.Appointment_ID}')">
+                                        `}
+                                    </td>
+                                    <td>${patient.Test_Name}</td>
+                                    <td>${patient.Appointment_Date}</td>
+                                </tr>
+                            `;
+                        });
+                        document.querySelector('tbody').innerHTML = tableBody;
+                    },
+                    error: function (error) {
+                        console.error('Error fetching patient data:', error);
+                    }
+                });
             }
 
         </script>

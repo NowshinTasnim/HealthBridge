@@ -1,4 +1,5 @@
 <?php $__env->startSection('content'); ?>
+<?php $page = 'Upload_reports'; ?>
 <div class="container_start">
     <div class = "container">
         <!-- Total number -->
@@ -114,10 +115,10 @@
                     fileNameDisplay.textContent = '';
                 }
             }
-
         </script>
     </div>
 </div>
+
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.lab', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\XAMPP\htdocs\HealthBridge\HealthBridge\resources\views/Lab/upload_reports.blade.php ENDPATH**/ ?>

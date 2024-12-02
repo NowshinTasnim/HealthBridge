@@ -61,8 +61,9 @@ Route::prefix('lab')->group(function(){
     Route::get('/dashboard', [LabController::class, 'dashboard'])->name('Lab.dashboard');
     Route::get('/patient_list', [LabController::class, 'patient_list'])->name('Lab.patient_list');
     Route::post('/patient_list', [LabController::class, 'markAsDone'])->name('Lab.patient_list.markAsDone');
+    Route::get('/patient_list/search', [LabController::class, 'searchPatients'])->name('Lab.patient_list.search');
     Route::get('/upload_reports', [LabController::class, 'upload_reports_view'])->name('Lab.upload_reports_view');
-    Route::post('/uploadreports', [LabController::class, 'uploadReport'])->name('upload.report');
+    Route::post('/upload_reports', [LabController::class, 'uploadReport'])->name('upload.report');
     Route::get('/upload_bills', [LabController::class, 'upload_bills_view'])->name('Lab.upload_bills_view');
     Route::post('/upload_bills', [LabController::class, 'uploadBill'])->name('upload.bill');
 });
