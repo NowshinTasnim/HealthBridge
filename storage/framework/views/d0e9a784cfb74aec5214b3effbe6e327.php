@@ -1,0 +1,1 @@
+<?php /**PATH D:\Xampp\htdocs\HealthBridge\resources\views/auth/login.blade.php ENDPATH**/ ?>
