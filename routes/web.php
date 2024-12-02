@@ -6,6 +6,7 @@ use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LabController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 
 
@@ -31,12 +32,22 @@ Auth::routes();
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/admin/dashboard', [LoginController::class, 'login'])->name('login.submit');
+Route::post('/Lab/dashboard', [LoginController::class, 'login'])->name('login.submit');
+//Route::post('/patient/dashboard', [LoginController::class, 'login'])->name('login.submit');
+Route::post('/insurance/dashboard', [LoginController::class, 'login'])->name('login.submit');
+
+Route::get('/register', [RegisterController::class, 'showRegisterForm'])->name('register');
+
+
+//Route::post('/Lab/dashboard', [RegisterController::class, 'register_insurance'])->name('insuranceRegister.submit');
+
+Route::post('/register/insurance', [RegisterController::class, 'register_insurance'])->name('insuranceRegister.submit');
 
 
 
 Route::get('/', [NavigationController::class, 'home'])->name('home');
 Route::post('/login', [NavigationController::class, 'login'])->name('login');
-Route::get('/signup', [NavigationController::class, 'signup'])->name('signup');
+//Route::get('/signup', [NavigationController::class, 'signup'])->name('signup');
 
 // Route::prefix('admin')->middleware(['auth'])->group(function () { removed middleware for testing
 Route::prefix('admin')->group(function () {

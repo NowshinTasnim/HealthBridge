@@ -34,10 +34,15 @@
                             </button>
                         </div>
                         <input type="text"
-                               placeholder="Search for..."
+                               placeholder="Search for Patient"
                                class="w-64 px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500">
                     </div>
 
+                    <!-- Contact Us -->
+                    <div class="relative flex items-center contact-us-box">
+                        <img src="<?php echo e(asset('images/msg.png')); ?>" alt="Message Icon" class="contact-icon" style="height: 15px;">
+                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text">Contact</a>
+                    </div>
 
                     <!-- Lab Profile -->
                     <div class="relative" x-data="{ open: false }">

@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    public function showLoginForm()
+    public function showLoginForm(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
         return view('auth.login');
     }
@@ -51,7 +51,7 @@ class LoginController extends Controller
             $pass = $_POST['Log_Password'];
 
 //            $sql = DB::select( "SELECT * FROM credentials WHERE (Login_ID = ? AND Log_Password = ?) LIMIT 1",[$logid,$pass]);
-
+//Query builder prevents SQL injection
             $sql = DB::table('credentials')
                 ->where('Login_ID', $logid)
                 ->where('Log_Password', $pass)
@@ -83,7 +83,7 @@ class LoginController extends Controller
             }
 
         }
-        return view('auth.login')->with($request->only('Login_ID'));
+        return view('auth.login')->withInput($request->only('Login_ID'));
 
     }
 

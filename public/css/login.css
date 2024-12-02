@@ -35,15 +35,17 @@ body {
 }
 
 .custom-btn {
-    margin-top: 25px; /* Add space above the button */
-    background-color: #4b0082; /* Change button color to green */
+    margin: 25px auto; /* Center the button horizontally and add top margin */
+    background-color: #4b0082; /* Change button color */
     border: none; /* Remove border */
     color: white; /* Set text color */
-    padding: 10px; /* Add padding for better aesthetics */
+    padding: 10px 20px; /* Add padding for better aesthetics */
     font-size: 16px; /* Increase font size */
     cursor: pointer; /* Change cursor to pointer on hover */
-    border-radius: 5px; /* Add rounded corners */
-    width: 100%; /* Make the button stretch to full width */
+    border-radius: 10px; /* Add rounded corners */
+    display: block; /* Ensure the button takes up block-level properties */
+    text-align: center; /* Center-align the text inside the button */
+    width: fit-content; /* Button width adapts to its content */
 }
 
 .custom-btn:hover {
@@ -54,7 +56,7 @@ body {
 .logo {
     position: absolute; /* Fix it to the top-left corner */
     top: 30px;          /* Add some space from the top */
-    left: 10px;         /* Add some space from the left */
+    left: 35px;         /* Add some space from the left */
     width: auto;        /* Adjust size */
     height: 40px;       /* Maintain aspect ratio */
 }
@@ -137,3 +139,11 @@ body {
     text-decoration: underline; /* Underline on hover */
     color: #4b0082; /* Darker shade of blue on hover */
 }
+
+
+
+
+
+
+
+

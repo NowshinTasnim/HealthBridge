@@ -19,3 +19,29 @@
 .container_start{
     padding: 15px;
 }
+
+.contact-us-box {
+    background-color: #ffffff; /* Light gray background */
+    padding: 8px 15px; /* Add padding inside the box */
+    border: 2px solid #a855f7; /* Light border around the box */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-icon {
+    width: 20px; /* Set icon size */
+    height: 20px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-us-text {
+    font-size: 14px; /* Adjust text size */
+    color: #4b0082; /* Dark gray text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold text */
+}
+
+.contact-us-text:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #555; /* Change color slightly on hover */
+}
