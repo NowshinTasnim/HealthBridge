@@ -8,22 +8,41 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 // use Illuminate\Support\Facades\Facade\Log;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 class LabController extends Controller
 {
-    //
+
     // public function __construct()
     // {
     //     $this->middleware('auth');
     // }
     public function dashboard()
     {
-        return view('Lab.dashboard');
+        // Retrieve LabID from session
+        $labId = Session::get('lab_id');
+        $log = Session::get('Login_ID');
+        if (!$labId) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        }
+
+        // Retrieve additional lab details if needed
+        $lab = DB::table('Lab')
+        ->where('LabID', $labId)
+        ->first();
+
+        return view('Lab.dashboard',['lab' => $lab,'log' =>$log]);
     }
     public function profile()
     {
-        $id = 1;
+        $id = Session::get('lab_id');
+        $log = Session::get('Login_ID');
+
+        if (!$id) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        };
+
         $lab = DB::table('Lab')
             ->where('LabID', $id)
             ->first();
@@ -52,6 +71,7 @@ class LabController extends Controller
             'lab' => $lab,
             'availableTests' => $availableTests,
             'allTests' => $addTests,
+            'log' => $log,
         ]);
     }
 
@@ -60,20 +80,28 @@ class LabController extends Controller
         $request->validate([
             'LabID' => 'required|integer|exists:Lab,LabID',
         ]);
+        $log = Session::get('Login_ID');
 
         $action = $request->Action;
         $labId = $request->LabID;
         if($action == "Add")
         {
+            // get available date ids after december 5 2024
+            $availableDateIds = DB::table("available_dates")
+            ->where("Available_date", '>','2024-12-05')
+            ->pluck('AvailableID')
+            ->toArray();
+
             //insert test to database for each available id
             $testIds = $request->TestID;
             foreach($testIds as $testId){
-                for($i=13; $i<21;$i++)
+                foreach($availableDateIds as $availableDateId)
+                //for($i=13; $i<21;$i++)
                 {
                 DB::table("Test_availability")->insert([
                     'LabID' => $labId,
                     'TestID' => $testId,
-                    'AvailableID' => $i,
+                    'AvailableID' => $availableDateId,
                 ]);
                 }
             }
@@ -94,7 +122,11 @@ class LabController extends Controller
 
     public function patient_list()
     {
-        $id = 1;
+        $id = Session::get('lab_id');
+        $log = Session::get('Login_ID');
+        if (!$id) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        };
         // Fetch data for a specific LabID
         // $patients = DB::table('Appointments')
         //         ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
@@ -118,7 +150,7 @@ class LabController extends Controller
         ]));
 
 
-        return view('Lab.patient_list',['patients'=> $patients]);
+        return view('Lab.patient_list',['patients'=> $patients, 'log' => $log]);
     }
 
     public function markAsDone(Request $request)
@@ -160,7 +192,12 @@ class LabController extends Controller
 
     public function upload_reports_view()
     {
-        $id = 1;
+        $id = Session::get('lab_id');
+        $log = Session::get('Login_ID');
+
+        if (!$id) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        };
         // Fetch data for a specific LabID
         $patients = DB::table('Appointments')
                 ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
@@ -179,7 +216,7 @@ class LabController extends Controller
                 ->where('Appointments.Report_Status', 'Not Uploaded')
                 ->get();
 
-        return view('Lab.upload_reports',['patients'=> $patients]);
+        return view('Lab.upload_reports',['patients'=> $patients, 'log' => $log]);
     }
 
 
@@ -217,7 +254,12 @@ class LabController extends Controller
 
     public function upload_bills_view()
     {
-        $id = 1;
+        $id = Session::get('lab_id');
+        $log = Session::get('Login_ID');
+
+        if (!$id) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        };
         // Fetch data for a specific LabID
         $patients = DB::table('Appointments')
                 ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
@@ -236,7 +278,7 @@ class LabController extends Controller
                 ->where('Appointments.Bill_Status', 'Not Uploaded')
                 ->get();
 
-        return view('Lab.upload_bills',['patients'=> $patients]);
+        return view('Lab.upload_bills',['patients'=> $patients, 'log' => $log]);
     }
 
 
@@ -275,7 +317,11 @@ class LabController extends Controller
     {
         $query = $request->input('query');
         $page = $request->input('page');
-        $id = 1;
+        $id = Session::get('lab_id');
+
+        if (!$id) {
+            return redirect()->route('login')->with('error', 'Session expired. Please log in again.');
+        };
         // Fetch patients whose names match the search query
         if($page == "Patient_list")
         {

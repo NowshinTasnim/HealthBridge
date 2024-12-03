@@ -6912,3 +6912,1071 @@
 #46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
 #47 {main}
 "} 
+[2024-12-03 09:51:56] local.ERROR: syntax error, unexpected token "else" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"else\" at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\LabController.php:90)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\composer\\ClassLoader.php(427): Composer\\Autoload\\{closure}('D:\\\\XAMPP\\\\htdocs...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1096): is_a('App\\\\Http\\\\Contro...', 'Illuminate\\\\Rout...', true)
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(1035): Illuminate\\Routing\\Route->controllerMiddleware()
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(818): Illuminate\\Routing\\Route->gatherMiddleware()
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(800): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#30 {main}
+"} 
+[2024-12-03 09:52:59] local.ERROR: Object of class stdClass could not be converted to string {"exception":"[object] (Error(code: 0): Object of class stdClass could not be converted to string at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:723)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(723): PDOStatement->bindValue(3, Object(stdClass), 2)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(41): Illuminate\\Database\\Connection->bindValues(Object(PDOStatement), Array)
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\MySqlConnection->Illuminate\\Database\\{closure}('insert into `Te...', Array)
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback('insert into `Te...', Array, Object(Closure))
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\MySqlConnection.php(34): Illuminate\\Database\\Connection->run('insert into `Te...', Array, Object(Closure))
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3498): Illuminate\\Database\\MySqlConnection->insert('insert into `Te...', Array)
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\LabController.php(80): Illuminate\\Database\\Query\\Builder->insert(Array)
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\LabController->updateTest(Object(Illuminate\\Http\\Request))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('updateTest', Array)
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\LabController), 'updateTest')
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#49 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#50 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#51 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#52 {main}
+"} 
+[2024-12-03 10:31:18] local.ERROR: Illuminate\Http\Request::Illuminate\Foundation\Providers\{closure}(): Argument #1 ($rules) must be of type array, Illuminate\Http\Request given, called in D:\XAMPP\htdocs\HealthBridge\HealthBridge\vendor\laravel\framework\src\Illuminate\Macroable\Traits\Macroable.php on line 123 {"exception":"[object] (TypeError(code: 0): Illuminate\\Http\\Request::Illuminate\\Foundation\\Providers\\{closure}(): Argument #1 ($rules) must be of type array, Illuminate\\Http\\Request given, called in D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php on line 123 at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FoundationServiceProvider.php:116)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php(123): Illuminate\\Http\\Request->Illuminate\\Foundation\\Providers\\{closure}(Object(Illuminate\\Http\\Request), Array)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\Auth\\LoginController.php(42): Illuminate\\Http\\Request->__call('validate', Array)
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Auth\\LoginController->login(Object(Illuminate\\Http\\Request))
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('login', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Auth\\LoginController), 'login')
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#47 {main}
+"} 
+[2024-12-03 11:04:27] local.ERROR: Route [auth.login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [auth.login] not defined. at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php(154): Illuminate\\Routing\\UrlGenerator->route('auth.login', Array)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\LabController.php(42): Illuminate\\Routing\\Redirector->route('auth.login')
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\LabController->profile()
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('profile', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\LabController), 'profile')
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#47 {main}
+"} 
+[2024-12-03 11:04:34] local.ERROR: Route [auth.login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [auth.login] not defined. at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php(154): Illuminate\\Routing\\UrlGenerator->route('auth.login', Array)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\LabController.php(27): Illuminate\\Routing\\Redirector->route('auth.login')
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\LabController->dashboard()
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('dashboard', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\LabController), 'dashboard')
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#47 {main}
+"} 
+[2024-12-03 11:04:36] local.ERROR: Route [auth.login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [auth.login] not defined. at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:477)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php(154): Illuminate\\Routing\\UrlGenerator->route('auth.login', Array)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\app\\Http\\Controllers\\LabController.php(27): Illuminate\\Routing\\Redirector->route('auth.login')
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\LabController->dashboard()
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('dashboard', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\LabController), 'dashboard')
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#47 {main}
+"} 
+[2024-12-03 11:07:30] local.ERROR: Undefined variable $log {"view":{"view":"D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\layouts\\lab.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-108712415 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#330</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-108712415\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","patients":"<pre class=sf-dump id=sf-dump-1362422263 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\Collection</span> {<a class=sf-dump-ref>#345</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:20</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => {<a class=sf-dump-ref>#346</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Barbara Clark</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">8578012345</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"23 characters\">Cardiac Catheterization</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-01</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>1</span>
+    </samp>}
+    <span class=sf-dump-index>1</span> => {<a class=sf-dump-ref>#348</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"8 characters\">John Kim</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"26 characters\">Complete blood count (CBC)</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-01</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>2</span>
+    </samp>}
+    <span class=sf-dump-index>2</span> => {<a class=sf-dump-ref>#349</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">James Carter</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5181234567</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Chest X-Ray</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>3</span>
+    </samp>}
+    <span class=sf-dump-index>3</span> => {<a class=sf-dump-ref>#350</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">William Hall</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552234567</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"10 characters\">Urinalysis</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>4</span>
+    </samp>}
+    <span class=sf-dump-index>4</span> => {<a class=sf-dump-ref>#351</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Linda Jackson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5556789012</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Pregnancy Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-06</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>5</span>
+    </samp>}
+    <span class=sf-dump-index>5</span> => {<a class=sf-dump-ref>#352</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Christopher King</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5556678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Chest X-Ray</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-07</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>6</span>
+    </samp>}
+    <span class=sf-dump-index>6</span> => {<a class=sf-dump-ref>#353</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"17 characters\">Patricia Mitchell</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5184567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>7</span>
+    </samp>}
+    <span class=sf-dump-index>7</span> => {<a class=sf-dump-ref>#354</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Michael Nguyen</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5557890123</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"29 characters\">Comprehensive Metabolic Panel</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>8</span>
+    </samp>}
+    <span class=sf-dump-index>8</span> => {<a class=sf-dump-ref>#355</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Sarah Lopez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5559901234</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Routine Blood Tests</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-12</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>9</span>
+    </samp>}
+    <span class=sf-dump-index>9</span> => {<a class=sf-dump-ref>#356</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Joseph Martinez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5558890123</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"17 characters\">Bacterial culture</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-13</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>10</span>
+    </samp>}
+    <span class=sf-dump-index>10</span> => {<a class=sf-dump-ref>#357</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Karen Green</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5452023456</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-02</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>11</span>
+    </samp>}
+    <span class=sf-dump-index>11</span> => {<a class=sf-dump-ref>#358</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"8 characters\">John Kim</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"3 characters\">MRI</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-03</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>12</span>
+    </samp>}
+    <span class=sf-dump-index>12</span> => {<a class=sf-dump-ref>#359</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Nancy Robinson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5557789012</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>13</span>
+    </samp>}
+    <span class=sf-dump-index>13</span> => {<a class=sf-dump-ref>#360</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Maria Thompson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552345678</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"29 characters\">Comprehensive Metabolic Panel</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>14</span>
+    </samp>}
+    <span class=sf-dump-index>14</span> => {<a class=sf-dump-ref>#361</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">Susan Wright</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5551123456</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Cardiac CT scan</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>15</span>
+    </samp>}
+    <span class=sf-dump-index>15</span> => {<a class=sf-dump-ref>#362</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Karen Hernandez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Pregnancy Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>16</span>
+    </samp>}
+    <span class=sf-dump-index>16</span> => {<a class=sf-dump-ref>#363</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Maria Thompson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552345678</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-03</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>17</span>
+    </samp>}
+    <span class=sf-dump-index>17</span> => {<a class=sf-dump-ref>#364</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">Thomas Scott</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5551012345</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Breath Alcohol Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-06</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>18</span>
+    </samp>}
+    <span class=sf-dump-index>18</span> => {<a class=sf-dump-ref>#365</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Karen Hernandez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-07</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>19</span>
+    </samp>}
+    <span class=sf-dump-index>19</span> => {<a class=sf-dump-ref>#366</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Charles Young</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5554456789</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>20</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1362422263\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","page":"<pre class=sf-dump id=sf-dump-58072361 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"12 characters\">Patient_list</span>\"
+</pre><script>Sfdump(\"sf-dump-58072361\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__currentLoopData":"<pre class=sf-dump id=sf-dump-1537358934 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\Collection</span> {<a class=sf-dump-ref>#345</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:20</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => {<a class=sf-dump-ref>#346</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Barbara Clark</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">8578012345</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"23 characters\">Cardiac Catheterization</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-01</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>1</span>
+    </samp>}
+    <span class=sf-dump-index>1</span> => {<a class=sf-dump-ref>#348</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"8 characters\">John Kim</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"26 characters\">Complete blood count (CBC)</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-01</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>2</span>
+    </samp>}
+    <span class=sf-dump-index>2</span> => {<a class=sf-dump-ref>#349</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">James Carter</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5181234567</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Chest X-Ray</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>3</span>
+    </samp>}
+    <span class=sf-dump-index>3</span> => {<a class=sf-dump-ref>#350</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">William Hall</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552234567</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"10 characters\">Urinalysis</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>4</span>
+    </samp>}
+    <span class=sf-dump-index>4</span> => {<a class=sf-dump-ref>#351</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Linda Jackson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5556789012</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Pregnancy Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-06</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>5</span>
+    </samp>}
+    <span class=sf-dump-index>5</span> => {<a class=sf-dump-ref>#352</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Christopher King</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5556678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Chest X-Ray</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-07</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>6</span>
+    </samp>}
+    <span class=sf-dump-index>6</span> => {<a class=sf-dump-ref>#353</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"17 characters\">Patricia Mitchell</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5184567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>7</span>
+    </samp>}
+    <span class=sf-dump-index>7</span> => {<a class=sf-dump-ref>#354</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Michael Nguyen</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5557890123</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"29 characters\">Comprehensive Metabolic Panel</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>8</span>
+    </samp>}
+    <span class=sf-dump-index>8</span> => {<a class=sf-dump-ref>#355</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Sarah Lopez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5559901234</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Routine Blood Tests</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-12</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>9</span>
+    </samp>}
+    <span class=sf-dump-index>9</span> => {<a class=sf-dump-ref>#356</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Joseph Martinez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5558890123</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"17 characters\">Bacterial culture</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-11-13</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>10</span>
+    </samp>}
+    <span class=sf-dump-index>10</span> => {<a class=sf-dump-ref>#357</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Karen Green</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5452023456</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-02</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>11</span>
+    </samp>}
+    <span class=sf-dump-index>11</span> => {<a class=sf-dump-ref>#358</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"8 characters\">John Kim</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555678901</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"3 characters\">MRI</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-03</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>12</span>
+    </samp>}
+    <span class=sf-dump-index>12</span> => {<a class=sf-dump-ref>#359</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Nancy Robinson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5557789012</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>13</span>
+    </samp>}
+    <span class=sf-dump-index>13</span> => {<a class=sf-dump-ref>#360</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Maria Thompson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552345678</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"29 characters\">Comprehensive Metabolic Panel</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-04</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>14</span>
+    </samp>}
+    <span class=sf-dump-index>14</span> => {<a class=sf-dump-ref>#361</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">Susan Wright</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5551123456</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Cardiac CT scan</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>15</span>
+    </samp>}
+    <span class=sf-dump-index>15</span> => {<a class=sf-dump-ref>#362</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Karen Hernandez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Pregnancy Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2024-12-05</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>16</span>
+    </samp>}
+    <span class=sf-dump-index>16</span> => {<a class=sf-dump-ref>#363</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Maria Thompson</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5552345678</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-03</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>17</span>
+    </samp>}
+    <span class=sf-dump-index>17</span> => {<a class=sf-dump-ref>#364</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"12 characters\">Thomas Scott</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5551012345</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Breath Alcohol Test</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-06</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>18</span>
+    </samp>}
+    <span class=sf-dump-index>18</span> => {<a class=sf-dump-ref>#365</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Karen Hernandez</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5555567890</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-07</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"8 characters\">Not Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>19</span>
+    </samp>}
+    <span class=sf-dump-index>19</span> => {<a class=sf-dump-ref>#366</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Charles Young</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5554456789</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-08</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>20</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1537358934\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","patient":"<pre class=sf-dump id=sf-dump-264885620 data-indent-pad=\"  \">{<a class=sf-dump-ref>#366</a><samp data-depth=1 class=sf-dump-expanded>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Patient_Name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Charles Young</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_Number</span>\": \"<span class=sf-dump-str title=\"10 characters\">5554456789</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_Date</span>\": \"<span class=sf-dump-str title=\"10 characters\">2025-01-08</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_Status</span>\": \"<span class=sf-dump-str title=\"4 characters\">Done</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Appointment_ID</span>\": <span class=sf-dump-num>20</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-264885620\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","loop":"<pre class=sf-dump id=sf-dump-1983950374 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1983950374\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $log at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\layouts\\lab.blade.php:62)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\Lab\\patient_list.blade.php(137): Illuminate\\View\\View->render()
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#58 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#59 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#60 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $log at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\a53203d4646ec19d07df2b199b762e32.php:57)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(255): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'D:\\\\XAMPP\\\\htdocs...', 57)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\a53203d4646ec19d07df2b199b762e32.php(57): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'D:\\\\XAMPP\\\\htdocs...', 57)
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\c81c212ac640121e536678f65c8fe5a9.php(137): Illuminate\\View\\View->render()
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#62 {main}
+"} 
+[2024-12-03 11:12:20] local.ERROR: Undefined variable $log {"view":{"view":"D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\layouts\\lab.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-170475954 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#329</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-170475954\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","lab":"<pre class=sf-dump id=sf-dump-656230571 data-indent-pad=\"  \">{<a class=sf-dump-ref>#347</a><samp data-depth=1 class=sf-dump-expanded>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">LabID</span>\": <span class=sf-dump-num>1</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Lab_Name</span>\": \"<span class=sf-dump-str title=\"26 characters\">Quest Diagnostics - Albany</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Physical_address</span>\": \"<span class=sf-dump-str title=\"45 characters\">2 Executive Park Dr, 2nd Fl, Albany, NY 12203</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">License_no</span>\": \"<span class=sf-dump-str title=\"10 characters\">1223334444</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Phone_no</span>\": \"<span class=sf-dump-str title=\"10 characters\">5184383388</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Email</span>\": \"<span class=sf-dump-str title=\"24 characters\">info@questdiagnostic.org</span>\"
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">CredentialID</span>\": <span class=sf-dump-num>53</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-656230571\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","availableTests":"<pre class=sf-dump id=sf-dump-1646095594 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\Collection</span> {<a class=sf-dump-ref>#346</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:9</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => {<a class=sf-dump-ref>#337</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>1</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"16 characters\">COVID-19 testing</span>\"
+    </samp>}
+    <span class=sf-dump-index>1</span> => {<a class=sf-dump-ref>#353</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>4</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"7 characters\">TB Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>2</span> => {<a class=sf-dump-ref>#354</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>5</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"11 characters\">Chest X-Ray</span>\"
+    </samp>}
+    <span class=sf-dump-index>3</span> => {<a class=sf-dump-ref>#352</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>7</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"29 characters\">Comprehensive Metabolic Panel</span>\"
+    </samp>}
+    <span class=sf-dump-index>4</span> => {<a class=sf-dump-ref>#356</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>13</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"33 characters\">Thyroid-stimulating hormone (TSH)</span>\"
+    </samp>}
+    <span class=sf-dump-index>5</span> => {<a class=sf-dump-ref>#357</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>14</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"17 characters\">Bacterial culture</span>\"
+    </samp>}
+    <span class=sf-dump-index>6</span> => {<a class=sf-dump-ref>#355</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>17</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"14 characters\">Pregnancy Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>7</span> => {<a class=sf-dump-ref>#359</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>19</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"3 characters\">MRI</span>\"
+    </samp>}
+    <span class=sf-dump-index>8</span> => {<a class=sf-dump-ref>#360</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>20</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"23 characters\">Cardiac Catheterization</span>\"
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1646095594\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","allTests":"<pre class=sf-dump id=sf-dump-1122887798 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\Collection</span> {<a class=sf-dump-ref>#363</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:11</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => {<a class=sf-dump-ref>#365</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>2</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Routine Blood Tests</span>\"
+    </samp>}
+    <span class=sf-dump-index>1</span> => {<a class=sf-dump-ref>#368</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>3</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+    </samp>}
+    <span class=sf-dump-index>2</span> => {<a class=sf-dump-ref>#364</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>6</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Breath Alcohol Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>3</span> => {<a class=sf-dump-ref>#367</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>8</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"17 characters\">A1C Blood Testing</span>\"
+    </samp>}
+    <span class=sf-dump-index>4</span> => {<a class=sf-dump-ref>#366</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>9</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"10 characters\">Urinalysis</span>\"
+    </samp>}
+    <span class=sf-dump-index>5</span> => {<a class=sf-dump-ref>#370</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>10</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"26 characters\">Complete blood count (CBC)</span>\"
+    </samp>}
+    <span class=sf-dump-index>6</span> => {<a class=sf-dump-ref>#371</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>11</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"22 characters\">Hemoglobin A1c (HbA1c)</span>\"
+    </samp>}
+    <span class=sf-dump-index>7</span> => {<a class=sf-dump-ref>#369</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>12</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+    </samp>}
+    <span class=sf-dump-index>8</span> => {<a class=sf-dump-ref>#372</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>15</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"18 characters\">Allergy Blood Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>9</span> => {<a class=sf-dump-ref>#373</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>16</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Beta HCG Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>10</span> => {<a class=sf-dump-ref>#374</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>18</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Cardiac CT scan</span>\"
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1122887798\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","page":"<pre class=sf-dump id=sf-dump-1733719959 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"11 characters\">Lab_profile</span>\"
+</pre><script>Sfdump(\"sf-dump-1733719959\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__currentLoopData":"<pre class=sf-dump id=sf-dump-172971188 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\Collection</span> {<a class=sf-dump-ref>#363</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">items</span>: <span class=sf-dump-note>array:11</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => {<a class=sf-dump-ref>#365</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>2</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Routine Blood Tests</span>\"
+    </samp>}
+    <span class=sf-dump-index>1</span> => {<a class=sf-dump-ref>#368</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>3</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"11 characters\">STD Testing</span>\"
+    </samp>}
+    <span class=sf-dump-index>2</span> => {<a class=sf-dump-ref>#364</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>6</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"19 characters\">Breath Alcohol Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>3</span> => {<a class=sf-dump-ref>#367</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>8</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"17 characters\">A1C Blood Testing</span>\"
+    </samp>}
+    <span class=sf-dump-index>4</span> => {<a class=sf-dump-ref>#366</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>9</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"10 characters\">Urinalysis</span>\"
+    </samp>}
+    <span class=sf-dump-index>5</span> => {<a class=sf-dump-ref>#370</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>10</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"26 characters\">Complete blood count (CBC)</span>\"
+    </samp>}
+    <span class=sf-dump-index>6</span> => {<a class=sf-dump-ref>#371</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>11</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"22 characters\">Hemoglobin A1c (HbA1c)</span>\"
+    </samp>}
+    <span class=sf-dump-index>7</span> => {<a class=sf-dump-ref>#369</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>12</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"16 characters\">Prothrombin time</span>\"
+    </samp>}
+    <span class=sf-dump-index>8</span> => {<a class=sf-dump-ref>#372</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>15</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"18 characters\">Allergy Blood Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>9</span> => {<a class=sf-dump-ref>#373</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>16</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"13 characters\">Beta HCG Test</span>\"
+    </samp>}
+    <span class=sf-dump-index>10</span> => {<a class=sf-dump-ref>#374</a><samp data-depth=3 class=sf-dump-compact>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>18</span>
+      +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Cardiac CT scan</span>\"
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+</samp>}
+</pre><script>Sfdump(\"sf-dump-172971188\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","test":"<pre class=sf-dump id=sf-dump-1193732024 data-indent-pad=\"  \">{<a class=sf-dump-ref>#374</a><samp data-depth=1 class=sf-dump-expanded>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">TestID</span>\": <span class=sf-dump-num>18</span>
+  +\"<span class=sf-dump-public title=\"Runtime added dynamic property\">Test_name</span>\": \"<span class=sf-dump-str title=\"15 characters\">Cardiac CT scan</span>\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1193732024\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","loop":"<pre class=sf-dump id=sf-dump-477530298 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-477530298\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $log at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\layouts\\lab.blade.php:62)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\resources\\views\\Lab\\profile.blade.php(72): Illuminate\\View\\View->render()
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#58 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#59 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#60 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $log at D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\a53203d4646ec19d07df2b199b762e32.php:57)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(255): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'D:\\\\XAMPP\\\\htdocs...', 57)
+#1 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\a53203d4646ec19d07df2b199b762e32.php(57): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Undefined varia...', 'D:\\\\XAMPP\\\\htdocs...', 57)
+#2 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#3 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#5 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#6 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#7 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\storage\\framework\\views\\8415ec7d0a0d81992b6cf648f38a081e.php(72): Illuminate\\View\\View->render()
+#10 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#12 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\XAMPP\\\\htdocs...', Array)
+#13 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\XAMPP\\\\htdocs...', Array)
+#14 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\XAMPP\\\\htdocs...', Array)
+#15 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#16 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#17 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#18 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#19 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#20 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#21 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#31 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#38 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#39 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#40 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#41 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#42 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#59 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#60 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#61 D:\\XAMPP\\htdocs\\HealthBridge\\HealthBridge\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#62 {main}
+"} 
