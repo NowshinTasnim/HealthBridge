@@ -54,13 +54,15 @@
 
 
                     <!-- Lab Profile -->
-                    <div class="relative" x-data="{ open: false }">
-                        <div class="flex flex-col items-center pointer-events-auto" @click="open = !open">
-                            <img src="{{ asset('images/icon1.png') }}" alt="Lab">
+                    <div class="relative">
+                        {{-- <div class="flex flex-col items-center pointer-events-auto" @click="open = !open"> --}}
+                        <div class="flex flex-col items-center pointer-events-auto">
+                            <!-- Go to Profile page-->
+                            <a href="{{ route('Lab.profile') }}"><img src="{{ asset('images/icon1.png') }}" alt="Lab"></a>
                             <span class="text-sm text-gray-700">Lab</span>
                         </div>
 
-                        <div x-show="open"
+                        {{-- <div x-show="open"
                             @click.away="open = false"
                             class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
                             x-transition:enter="transition ease-out duration-100"
@@ -76,7 +78,17 @@
                                     Logout
                                 </button>
                             </form>
-                        </div>
+                        </div> --}}
+                    </div>
+
+                    <!-- LogOut -->
+                    <div class="relative flex items-center">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit">
+                                <img src="{{ asset('images/arrow.png') }}" alt="logout" style="height: 30px; width: auto;">
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -95,7 +107,7 @@
                 </svg> --}}
                 <span class="font-semibold">Dashboard</span>
             </a>
-
+            <hr class= "Custom_line2">
             <hr class= "Custom_line">
             <!-- Side Navigation Section -->
             <div class="mt-6">

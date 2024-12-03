@@ -49,29 +49,25 @@
 
 
                     <!-- Lab Profile -->
-                    <div class="relative" x-data="{ open: false }">
-                        <div class="flex flex-col items-center pointer-events-auto" @click="open = !open">
-                            <img src="<?php echo e(asset('images/icon1.png')); ?>" alt="Lab">
+                    <div class="relative">
+                        
+                        <div class="flex flex-col items-center pointer-events-auto">
+                            <!-- Go to Profile page-->
+                            <a href="<?php echo e(route('Lab.profile')); ?>"><img src="<?php echo e(asset('images/icon1.png')); ?>" alt="Lab"></a>
                             <span class="text-sm text-gray-700">Lab</span>
                         </div>
 
-                        <div x-show="open"
-                            @click.away="open = false"
-                            class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
-                            x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95">
-                            <form method="POST" action="<?php echo e(route('logout')); ?>">
-                                <?php echo csrf_field(); ?>
-                                <button type="submit"
-                                        class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-purple-50">
-                                    Logout
-                                </button>
-                            </form>
-                        </div>
+                        
+                    </div>
+
+                    <!-- LogOut -->
+                    <div class="relative flex items-center">
+                        <form method="POST" action="<?php echo e(route('logout')); ?>">
+                            <?php echo csrf_field(); ?>
+                            <button type="submit">
+                                <img src="<?php echo e(asset('images/arrow.png')); ?>" alt="logout" style="height: 30px; width: auto;">
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -88,7 +84,7 @@
                 
                 <span class="font-semibold">Dashboard</span>
             </a>
-
+            <hr class= "Custom_line2">
             <hr class= "Custom_line">
             <!-- Side Navigation Section -->
             <div class="mt-6">
