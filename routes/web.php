@@ -63,6 +63,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/rejected-claims', [AdminController::class, 'rejectedClaims'])->name('admin.rejected-claims');
 });
 
+// Route::prefix('lab')->middleware(['auth', 'check_user_type:2'])->group(function(){
 Route::prefix('lab')->group(function(){
     Route::get('/dashboard', [LabController::class, 'dashboard'])->name('Lab.dashboard');
     Route::get('/profile', [LabController::class, 'profile'])->name('Lab.profile');
