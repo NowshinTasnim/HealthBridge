@@ -43,8 +43,15 @@
                     <!-- Contact Us -->
                     <div class="relative flex items-center contact-us-box">
                         <img src="{{ asset('images/msg.png') }}" alt="Message Icon" class="contact-icon" style="height: 15px;">
-                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text">Contact</a>
+                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text" style="text-decoration: none;">Contact</a>
                     </div>
+                    {{-- <div class="relative flex items-center contact-us-box" style="display: flex; align-items: center; gap: 5px;">
+                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="{{ asset('images/msg.png') }}" alt="Message Icon" class="contact-icon" style="height: 15px; margin-right: 5px;">
+                            <span>Contact</span>
+                        </a>
+                    </div> --}}
+
 
                     <!-- Lab Profile -->
                     <div class="relative" x-data="{ open: false }">
