@@ -43,8 +43,10 @@
                     <!-- Contact Us -->
                     <div class="relative flex items-center contact-us-box">
                         <img src="<?php echo e(asset('images/msg.png')); ?>" alt="Message Icon" class="contact-icon" style="height: 15px;">
-                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text">Contact</a>
+                        <a href="mailto:snehakhan52@gmail.com?subject=Support%20Request&body=Hi%20Team,%0A%0AI%20need%20help%20with..." class="contact-us-text" style="text-decoration: none;">Contact</a>
                     </div>
+                    
+
 
                     <!-- Lab Profile -->
                     <div class="relative" x-data="{ open: false }">
