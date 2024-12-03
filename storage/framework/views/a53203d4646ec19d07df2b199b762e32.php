@@ -54,7 +54,7 @@
                         <div class="flex flex-col items-center pointer-events-auto">
                             <!-- Go to Profile page-->
                             <a href="<?php echo e(route('Lab.profile')); ?>"><img src="<?php echo e(asset('images/icon1.png')); ?>" alt="Lab"></a>
-                            <span class="text-sm text-gray-700">Lab</span>
+                            <span class="text-sm text-gray-700"><?php echo e($log); ?></span>
                         </div>
 
                         

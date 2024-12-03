@@ -88,7 +88,4 @@ Route::prefix('insurance')->group(function () {
 });
 
 
-Route::post('/logout', function () {
-    // Auth::logout(); commented out for testing
-    return redirect()->route('login');
-})->name('logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

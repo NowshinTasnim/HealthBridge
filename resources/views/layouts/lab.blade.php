@@ -59,7 +59,7 @@
                         <div class="flex flex-col items-center pointer-events-auto">
                             <!-- Go to Profile page-->
                             <a href="{{ route('Lab.profile') }}"><img src="{{ asset('images/icon1.png') }}" alt="Lab"></a>
-                            <span class="text-sm text-gray-700">Lab</span>
+                            <span class="text-sm text-gray-700">{{ $log}}</span>
                         </div>
 
                         {{-- <div x-show="open"
