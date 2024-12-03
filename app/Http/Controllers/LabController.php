@@ -21,23 +21,102 @@ class LabController extends Controller
     {
         return view('Lab.dashboard');
     }
+    public function profile()
+    {
+        $id = 1;
+        $lab = DB::table('Lab')
+            ->where('LabID', $id)
+            ->first();
+
+        // Fetch tests available for the lab
+        $availableTests = DB::table ('Test_availability')
+            ->join('Lab_Test', 'Test_availability.TestID', '=', 'Lab_Test.TestID')
+            ->select('Lab_Test.TestID as TestID',
+            'Lab_Test.Test_name as Test_name')
+            ->where('LabID', $id)
+            ->distinct()
+            ->get();
+
+        // Fetch all possible tests
+        $excludedTestIds = DB::table('Test_availability')
+            ->join('Lab_Test', 'Test_availability.TestID', '=', 'Lab_Test.TestID')
+            ->select('Lab_Test.TestID')
+            ->where('LabID', $id)
+            ->distinct();
+
+        $addTests = DB::table('Lab_Test')
+            ->whereNotIn('TestID', $excludedTestIds)
+            ->get();
+
+        return view('Lab.profile', [
+            'lab' => $lab,
+            'availableTests' => $availableTests,
+            'allTests' => $addTests,
+        ]);
+    }
+
+    public function updateTest(Request $request)
+    {
+        $request->validate([
+            'LabID' => 'required|integer|exists:Lab,LabID',
+        ]);
+
+        $action = $request->Action;
+        $labId = $request->LabID;
+        if($action == "Add")
+        {
+            //insert test to database for each available id
+            $testIds = $request->TestID;
+            foreach($testIds as $testId){
+                for($i=13; $i<21;$i++)
+                {
+                DB::table("Test_availability")->insert([
+                    'LabID' => $labId,
+                    'TestID' => $testId,
+                    'AvailableID' => $i,
+                ]);
+                }
+            }
+
+            return redirect()->route('Lab.profile')->with('success', 'Test added successfully.');
+        }
+        else if($action == "Delete"){
+            $testId = $request->TestID;
+            //Delete all the rows
+            DB::table("Test_availability")
+                ->where('LabID' , $labId)
+                ->where('TestID' , $testId)
+                ->delete();
+                return redirect()->route('Lab.profile')->with('success', 'Test deleted successfully.');
+        }
+        return redirect()->route('Lab.profile')->with('error', 'Invalid action specified.');
+    }
+
     public function patient_list()
     {
         $id = 1;
         // Fetch data for a specific LabID
-        $patients = DB::table('Appointments')
-                ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
-                ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
-                ->select(
-                    'Patient.Pt_Name as Patient_Name',
-                    'Patient.Phone_no as Phone_Number',
-                    'Appointments.Test_Status as Test_Status',
-                    'Lab_Test.Test_name as Test_Name',
-                    'Appointments.App_Date as Appointment_Date',
-                    'Appointments.AppointmentID as Appointment_ID'
-                )
-                ->where('LabID', $id)
-                ->get();
+        // $patients = DB::table('Appointments')
+        //         ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
+        //         ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
+        //         ->select(
+        //             'Patient.Pt_Name as Patient_Name',
+        //             'Patient.Phone_no as Phone_Number',
+        //             'Appointments.Test_Status as Test_Status',
+        //             'Lab_Test.Test_name as Test_Name',
+        //             'Appointments.App_Date as Appointment_Date',
+        //             'Appointments.AppointmentID as Appointment_ID'
+        //         )
+        //         ->where('LabID', $id)
+        //         ->get();
+
+        // Call the stored procedure
+        $patients = collect(DB::select('CALL GetPatientDetails(?, ?, ?)', [
+            $id,
+            NULL,
+            TRUE
+        ]));
+
 
         return view('Lab.patient_list',['patients'=> $patients]);
     }
@@ -200,20 +279,25 @@ class LabController extends Controller
         // Fetch patients whose names match the search query
         if($page == "Patient_list")
         {
-            $patients = DB::table('Appointments')
-                ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
-                ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
-                ->select(
-                    'Patient.Pt_Name as Patient_Name',
-                    'Patient.Phone_no as Phone_Number',
-                    'Appointments.Test_Status as Test_Status',
-                    'Lab_Test.Test_name as Test_Name',
-                    'Appointments.App_Date as Appointment_Date',
-                    'Appointments.AppointmentID as Appointment_ID'
-                )
-                ->where('Patient.Pt_Name', 'like', '%' . $query . '%')
-                ->where('LabID', $id)
-                ->get();
+            $patients = collect(DB::select('CALL GetPatientDetails(?, ?, ?)', [
+                $id,
+                $query,
+                TRUE
+            ]));
+            // $patients = DB::table('Appointments')
+            //     ->join('Patient', 'Appointments.PatientID', '=', 'Patient.PatientID')
+            //     ->join('Lab_Test', 'Appointments.TestID', '=', 'Lab_Test.TestID')
+            //     ->select(
+            //         'Patient.Pt_Name as Patient_Name',
+            //         'Patient.Phone_no as Phone_Number',
+            //         'Appointments.Test_Status as Test_Status',
+            //         'Lab_Test.Test_name as Test_Name',
+            //         'Appointments.App_Date as Appointment_Date',
+            //         'Appointments.AppointmentID as Appointment_ID'
+            //     )
+            //     ->where('Patient.Pt_Name', 'like', '%' . $query . '%')
+            //     ->where('LabID', $id)
+            //     ->get();
         }
         else if($page == "Upload_reports")
         {

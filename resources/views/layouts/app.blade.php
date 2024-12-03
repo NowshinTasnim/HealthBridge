@@ -18,7 +18,7 @@
                     </div>
                 </a>
                 <div class="flex items-center space-x-4">
-                    <a href="{{ route('signup') }}" class="bg-purple-800 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">Sign Up</a>
+                    <a href="#" class="bg-purple-800 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition">Sign Up</a>
                     <a href="{{ route('login') }}" class="border border-purple-800 text-purple-800 px-4 py-2 rounded-lg hover:bg-purple-50 transition">Log In</a>
                 </div>
             </div>
